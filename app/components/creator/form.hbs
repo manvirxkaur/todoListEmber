@@ -1,0 +1,19 @@
+{{#if this.isClicked}}
+  <div>
+    <button {{on "click" this.toggleClicked}}>Cancel</button>
+    <br><br>
+    <form>
+      <label>Title : </label>
+      <input><br><br>
+      <label>Description : </label>
+      <input><br><br>
+      <label>Due Date : </label>
+      <input><br>
+      <button>Save</button>
+    </form>
+  </div>
+{{else}}
+  <div>
+    <button {{on "click" this.toggleClicked}}>Create Note</button>
+  </div>
+{{/if}}
